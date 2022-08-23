@@ -1,4 +1,4 @@
-CPU Code
+CocoSketch
 ============
 
 Repository structure
@@ -7,7 +7,6 @@ Repository structure
 *  `Struct/`: the data structures, such as heap and hash table
 *  `Single/`: the single-key sketching algorithms
 *  `Multiple/`: the hardware and software versions of our CocoSketch and USS
-*  `Benchmark.h`: the benchmarks about ARE, recall rate, and precision rate
 
 Requirements
 -------
@@ -17,7 +16,11 @@ Requirements
 How to run
 -------
 ```bash
-$ cmake .
-$ make
-$ ./CPU your-dataset
+1. cmake .
+2. make
+3. ./CPU session-type
+- session-type=1:Heavy Hitter
+- session-type=2:Heavy Change
+- session-type=3:1-D Hierarchical Heavy Hitter
+- session-type=4:2-D Hierarchical Heavy Change
 ```
